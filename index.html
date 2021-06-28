@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- SLICK CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header__content">
+            <div class="header__left">
+                <img src="./img/web-logo.png" alt="logo">
+            </div>
+            <div class="header__center">
+                <ul>
+                    <li>Lịch chiếu</li>
+                    <li>Cụm rạp</li>
+                    <li>Tin tức</li>
+                    <li>Ứng dụng</li>
+                </ul>
+            </div>
+            <div class="header__right">
+                <div class="imgCircle">
+                    <a class="right__acount" href="#">
+                        <img src="./img/avatar.png" alt="acount">
+                        <p>Đăng Nhập</p>
+                    </a>
+                </div>
+                <div class="dropdown">
+                    <img src="./img/location-header.png" alt="location">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hồ Chí Minh
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <ul class="selectScroll">
+                            <li>Hà nội</li>
+                            <li>Bình Định</li>
+                            <li>Hà nội</li>
+                            <li>Bình Định</li>
+                            <li>Hà nội</li>
+                            <li>Bình Định</li>
+                            <li>Hà nội</li>
+                            <li>Bình Định</li>
+                            <li>Hà nội</li>
+                            <li>Bình Định</li>
+                            <li>Hà nội</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header__mobile-menu">
+                <img id="menu" src="./img/menu-options.png" alt="menu">
+            </div>
+            <div id="active" class="sideMenu active">
+                <div id="sideMenu" class="wrapMenuMobile customScroll">
+                    <div class="wrapFirst">
+                        <a href="#" class="title-menu-mobile ng-scope">
+                            <img src="./img/avatar.png"> Đăng Nhập
+                        </a>
+                        <img id="menu_back" src="./img/next-session.png" class="close icon-arrow-right">
+                    </div>
+                    <a href="#" class="menu titleDisplay title-menu-mobile" data-scroll="homeMovies">Lịch Chiếu</a>
+                    <a ui-sref="main.cinemaMobile" class="menu titleDisplay title-menu-mobile">Cụm rạp</a>
+                    <a href="#" class="menu titleDisplay title-menu-mobile" data-scroll="homeNews">Tin Tức</a>
+                    <a href="#" class="menu titleDisplay title-menu-mobile" data-scroll="wrapHomeApp">Ứng dụng</a>
+                    <a class=" menu location-mobile titleDisplay title-menu-mobile ng-binding">Hồ Chí Minh</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <section class="carousel">
+        <div class="carousel__content">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="over__lay">
+                        <img src="./img/play-video.png" alt="logoVideo">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="./img/ban-tay-diet-quy-evil-expeller-16177781815781.png" alt="picture1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/lat-mat-48h-16177782153424.png" alt="picture2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/lat-mat-48h-16177782153424.png" alt="picture3">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="hideOnMobile">
+            <div class="hideOnMobile__content container">
+                <div class=" dropdown selectPhim">
+                    <div class="dropdown-toggle selectMenu" data-toggle="dropdown">Phim</div>
+                    <ul class="dropdown-menu selectScroll">
+                        <li class="ng-scope">
+                            <a>Trạng Tí Phiêu Lưu Ký</a>
+                        </li>
+                        <li class="ng-scope">
+                            <a>Lật Mặt: 48h</a>
+                        </li>
+                        <li class="ng-scope">
+                            <a>Thiên Thần Hộ Mệnh - The Guardian (C18)</a>
+                        </li>
+                        <li class="ng-scope">
+                            <a>Detective Conan: Scarlet Bullet - Thám Tử Lừng Danh Conan: Viên Đạn Đỏ - C13</a>
+                        </li>
+                        <li class="ng-scope">
+                            <a>Người Nhân Bản - Seobok (C16)</a>
+                        </li>
+                        <li class="ng-scope">
+                            <a>Bàn Tay Diệt Quỷ - Evil Expeller (C16)</a>
+                        </li>
+                        <li class="ng-scope">
+                            <a>Kẻ Vô Danh - Nobody - C18</a>
+                        </li>
+                        <li class="ng-scope">
+                            <a>Hùng Thần Trắng - Great White - C18</a>
+                        </li>
+                        <li class="ng-scope">
+                            <a>Chiến Binh Cuối Cùng: Cuội Nguồn Của Quỷ - The Last Warrior: Root Of Evil - C13</a>
+                        </li>
+                        <li class="ng-scope">
+                            <a>Ong Nhí Phiêu Lưu Ký: Giải Cứu Công Chúa Kiến - Maya The Bee 3: The Golden Orb - P</a>
+                        </li>
+                        <li class="ng-scope">
+                            <a>Nhân Đôi Tình Yêu - Double Party - C13</a>
+                        </li>
+                        <li class="ng-scope">
+                            <a>Trùm Cuối Siêu Đẳng - Boss Level - C18</a>
+                        </li>
+                        <li class="ng-scope">
+                            <a>The Hypnosis - Con Lắc Tà Thuật - C18</a>
+                        </li>
+                        <li class="ng-scope">
+                            <a>Godzilla vs. Kong</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown selectCinema">
+                    <div class="dropdown-toggle selectMenu" data-toggle="dropdown">Rạp</div>
+                    <ul class="dropdown-menu ">
+                        <li class="ng-scope"><a>Vui lòng chọn phim</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown selectDate">
+                    <div class="dropdown-toggle selectMenu" data-toggle="dropdown">Ngày xem</div>
+                    <ul class="dropdown-menu w-200">
+                        <li class="ng-scope"><a>Vui lòng chọn phim và rạp</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown selectSession">
+                    <div class="dropdown-toggle selectMenu" data-toggle="dropdown">Suất chiếu</div>
+                    <ul class="dropdown-menu w-200">
+                        <li class="ng-scope"><a>Vui lòng chọn phim, rạp và ngày xem</a></li>
+                    </ul>
+                </div>
+                <div class="smallBlock w-200">
+                    <button type="button" class="btn btn-primary" id="btnBuy">MUA VÉ NGAY</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="movies">
+        <div class="movies__content container">
+            <div class="movies__title">
+                <!-- <ul>
+                    <li><a href="#">Đang Chiếu</a></li>
+                    <li><a href="#">Sắp Chiếu</a></li>
+                </ul> -->
+                <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Đang Chiếu</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Sắp chiếu</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="movies__card">
+                        <div class="card__item">
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/trang-ti-16194120693380_215x318.jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Trạng tí phiêu lưu ký</h4>
+                                    </div>
+                                    <p>100 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/lat-mat-48h-16176188609123_215x318.png"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Lật Mặt: 48h</h4>
+                                    </div>
+                                    <p>100 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/thien-than-ho-menh-16157907251398_215x318.jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Thiên Thần Hộ Mệnh - The Guardian (C18)</h4>
+                                    </div>
+                                    <p>124 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4 class="dau">Detective Conan: Scarlet Bullet - Thám Tử Lừng Danh Conan: Viên Đạn Đỏ - C13</h4>
+                                    </div>
+                                    <p>110 phút - 6.4 IMDb</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/nguoi-nhan-ban-seobok-c18-16170933054901_215x318.jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Người Nhân Bản - Seobok (C16)</h4>
+                                    </div>
+                                    <p>114 phút - 6.2 IMDb</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/ban-tay-diet-quy-evil-expeller-c16-16167437811994_215x318.png"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Bàn Tay Diệt Quỷ - Evil Expeller (C16)</h4>
+                                    </div>
+                                    <p>129 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/ke-vo-danh-nobody-c18-16177813592209_215x318.png"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Kẻ Vô Danh - Nobody - C18</h4>
+                                    </div>
+                                    <p>92 phút - 7.4 IMDb</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/hung-than-trang-great-white-c13-16199525115620_215x318.png"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Hùng Thần Trắng - Great White - C18</h4>
+                                    </div>
+                                    <p>100 phút - 3.9 IMDb</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__item">
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/chien-binh-cuoi-cung-cuoi-nguon-cua-quy-the-last-warrior-root-of-evil-c13-16199511224567_215x318.png"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4 class="dau">Chiến Binh Cuối Cùng: Cuội Nguồn Của Quỷ - The Last Warrior: Root Of Evil - C13</h4>
+                                    </div>
+                                    <p>122 phút - 5.9 IMDb</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/ong-nhi-phieu-luu-ky-giai-cuu-cong-chua-kien-maya-the-bee-3-the-golden-orb-p-16177793756407_215x318.png"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4 class="dau">Ong Nhí Phiêu Lưu Ký: Giải Cứu Công Chúa Kiến - Maya The Bee 3: The Golden Orb - P</h4>
+                                    </div>
+                                    <p>88 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/nhan-doi-tinh-yeu-double-party-c13-16188292910862_215x318.png"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Nhân Đôi Tình Yêu - Double Party - C13</h4>
+                                    </div>
+                                    <p>107 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/trum-cuoi-sieu-dang-bosslevel-c18-16188999396703_215x318.png"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Trùm Cuối Siêu Đẳng - Boss Level - C18</h4>
+                                    </div>
+                                    <p>100 phút - 6.9 IMDb</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/the-hypnosis-con-lac-ta-thuat-c18-16185613453118_215x318.png"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>The Hypnosis - Con Lắc Tà Thuật - C18</h4>
+                                    </div>
+                                    <p>110 phút - 5.1 IMDb</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/godzilla-vs-kong-16150074733397_215x318.jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Godzilla vs. Kong</h4>
+                                    </div>
+                                    <p>100 phút - 6.4 IMDb</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="movies__card">
+                        <div class="card__item">
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318 (1).jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Biệt Đội Săn Ma Chuyển Kiếp - Ghostbusters Afterlife</h4>
+                                    </div>
+                                    <p>100 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/em-va-trinh-15813267048692_215x318.jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Em và Trịnh</h4>
+                                    </div>
+                                    <p>0 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/fast-furious-9-15803709020861_215x318.jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Fast & Furious 9</h4>
+                                    </div>
+                                    <p>100 phút - 5.4 IMDb</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/ta-nang-phan-dung-15862384755700_215x318.jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Tà Năng Phan Dũng</h4>
+                                    </div>
+                                    <p>100 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/1990-c16-16170969832613_215x318.jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>1990 (C16)</h4>
+                                    </div>
+                                    <p>120 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/shang-chi-and-the-legend-of-the-ten-rings-15668741464229_215x318.jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Shang-Chi and the Legend of the Ten Rings</h4>
+                                    </div>
+                                    <p>100 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/dua-be-i-16188328093041_215x318.png"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Đứa Bé - I </h4>
+                                    </div>
+                                    <p>114 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/john-wick-chapter-4-15827770304921_215x318.jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>John Wick: Chapter 4</h4>
+                                    </div>
+                                    <p>100 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__item">
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/the-matrix-4-15827771560629_215x318.jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>The Matrix 4</h4>
+                                    </div>
+                                    <p>100 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/cruella-16182123467884_215x318.png"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Cruella</h4>
+                                    </div>
+                                    <p>0 phút - 7.4 IMDb</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/chu-ngua-bat-kham-spirit-p-16171851912283_215x318.png"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Chú ngựa bất kham- Spirit - P</h4>
+                                    </div>
+                                    <p>100 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/am-anh-kinh-hoang-3-the-conjuring-3-c18-15742352934530_215x318.jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4 class="dau">Ám Ảnh Kinh Hoàng 3 - The Conjuring The Devil Made Me Do It (C18)</h4>
+                                    </div>
+                                    <p>100 phút - 6.4 IMDb</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/jurassic-world-dominion-15827788277771_215x318.jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Jurassic World: Dominion</h4>
+                                    </div>
+                                    <p>100 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/in-the-heights-15779380081932_215x318.jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>In the Heights</h4>
+                                    </div>
+                                    <p>100 phút - 7.7 IMDb</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/venom-2-15740591875202_215x318.jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Venom: Let There Be Carnage</h4>
+                                    </div>
+                                    <p>100 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                            <div class="item__content">
+                                <div class="item-poster">
+                                    <div class="item-overlay">  
+                                        <img src="./img/play-video.png" alt="play">                       
+                                    </div>
+                                    <div class="item-image">
+                                        <img src="./img/minions-su-troi-day-cua-gru-15809552091851_215x318.jpg"
+                                            alt="poster">
+                                    </div>                         
+                                    <div class="avgPoint">
+                                        <p>5.5</p>
+                                        <div class="avgPoint-star">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.png">
+                                            <img src="./img/star1.2.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <div class="item-info-title">
+                                        <span>P</span>
+                                        <h4>Minions: Sự Trỗi Dậy Của Gru</h4>
+                                    </div>
+                                    <p>100 phút</p>
+                                </div>
+                                <div class="mua_ve">
+                                    <button class="btn btn-danger"> MUA VÉ </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+            <!-- <div class="movies__card">
+                <div class="card__item">
+                    <div class="item__content">
+                        <div class="item-poster">
+                            <div class="item-overlay">  
+                                <img src="./img/play-video.png" alt="play">                       
+                            </div>
+                            <div class="item-image">
+                                <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                    alt="poster">
+                            </div>                         
+                            <div class="avgPoint">
+                                <p>5.5</p>
+                                <div class="avgPoint-star">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-title">
+                                <span>P</span>
+                                <h4>Trạng tí phiêu lưu ký</h4>
+                            </div>
+                            <p>100 phút</p>
+                        </div>
+                    </div>
+                    <div class="item__content">
+                        <div class="item-poster">
+                            <div class="item-overlay">  
+                                <img src="./img/play-video.png" alt="play">                       
+                            </div>
+                            <div class="item-image">
+                                <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                    alt="poster">
+                            </div>                         
+                            <div class="avgPoint">
+                                <p>5.5</p>
+                                <div class="avgPoint-star">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-title">
+                                <span>P</span>
+                                <h4>Trạng tí phiêu lưu ký</h4>
+                            </div>
+                            <p>100 phút</p>
+                        </div>
+                    </div>
+                    <div class="item__content">
+                        <div class="item-poster">
+                            <div class="item-overlay">  
+                                <img src="./img/play-video.png" alt="play">                       
+                            </div>
+                            <div class="item-image">
+                                <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                    alt="poster">
+                            </div>                         
+                            <div class="avgPoint">
+                                <p>5.5</p>
+                                <div class="avgPoint-star">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-title">
+                                <span>P</span>
+                                <h4>Trạng tí phiêu lưu ký</h4>
+                            </div>
+                            <p>100 phút</p>
+                        </div>
+                    </div>
+                    <div class="item__content">
+                        <div class="item-poster">
+                            <div class="item-overlay">  
+                                <img src="./img/play-video.png" alt="play">                       
+                            </div>
+                            <div class="item-image">
+                                <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                    alt="poster">
+                            </div>                         
+                            <div class="avgPoint">
+                                <p>5.5</p>
+                                <div class="avgPoint-star">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-title">
+                                <span>P</span>
+                                <h4>Trạng tí phiêu lưu ký</h4>
+                            </div>
+                            <p>100 phút</p>
+                        </div>
+                    </div>
+                    <div class="item__content">
+                        <div class="item-poster">
+                            <div class="item-overlay">  
+                                <img src="./img/play-video.png" alt="play">                       
+                            </div>
+                            <div class="item-image">
+                                <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                    alt="poster">
+                            </div>                         
+                            <div class="avgPoint">
+                                <p>5.5</p>
+                                <div class="avgPoint-star">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-title">
+                                <span>P</span>
+                                <h4>Trạng tí phiêu lưu ký</h4>
+                            </div>
+                            <p>100 phút</p>
+                        </div>
+                    </div>
+                    <div class="item__content">
+                        <div class="item-poster">
+                            <div class="item-overlay">  
+                                <img src="./img/play-video.png" alt="play">                       
+                            </div>
+                            <div class="item-image">
+                                <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                    alt="poster">
+                            </div>                         
+                            <div class="avgPoint">
+                                <p>5.5</p>
+                                <div class="avgPoint-star">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-title">
+                                <span>P</span>
+                                <h4>Trạng tí phiêu lưu ký</h4>
+                            </div>
+                            <p>100 phút</p>
+                        </div>
+                    </div>
+                    <div class="item__content">
+                        <div class="item-poster">
+                            <div class="item-overlay">  
+                                <img src="./img/play-video.png" alt="play">                       
+                            </div>
+                            <div class="item-image">
+                                <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                    alt="poster">
+                            </div>                         
+                            <div class="avgPoint">
+                                <p>5.5</p>
+                                <div class="avgPoint-star">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-title">
+                                <span>P</span>
+                                <h4>Trạng tí phiêu lưu ký</h4>
+                            </div>
+                            <p>100 phút</p>
+                        </div>
+                    </div>
+                    <div class="item__content">
+                        <div class="item-poster">
+                            <div class="item-overlay">  
+                                <img src="./img/play-video.png" alt="play">                       
+                            </div>
+                            <div class="item-image">
+                                <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                    alt="poster">
+                            </div>                         
+                            <div class="avgPoint">
+                                <p>5.5</p>
+                                <div class="avgPoint-star">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-title">
+                                <span>P</span>
+                                <h4>Trạng tí phiêu lưu ký</h4>
+                            </div>
+                            <p>100 phút</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__item">
+                    <div class="item__content">
+                        <div class="item-poster">
+                            <div class="item-overlay">  
+                                <img src="./img/play-video.png" alt="play">                       
+                            </div>
+                            <div class="item-image">
+                                <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                    alt="poster">
+                            </div>                         
+                            <div class="avgPoint">
+                                <p>5.5</p>
+                                <div class="avgPoint-star">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-title">
+                                <span>P</span>
+                                <h4>Trạng tí phiêu lưu ký</h4>
+                            </div>
+                            <p>100 phút</p>
+                        </div>
+                    </div>
+                    <div class="item__content">
+                        <div class="item-poster">
+                            <div class="item-overlay">  
+                                <img src="./img/play-video.png" alt="play">                       
+                            </div>
+                            <div class="item-image">
+                                <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                    alt="poster">
+                            </div>                         
+                            <div class="avgPoint">
+                                <p>5.5</p>
+                                <div class="avgPoint-star">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-title">
+                                <span>P</span>
+                                <h4>Trạng tí phiêu lưu ký</h4>
+                            </div>
+                            <p>100 phút</p>
+                        </div>
+                    </div>
+                    <div class="item__content">
+                        <div class="item-poster">
+                            <div class="item-overlay">  
+                                <img src="./img/play-video.png" alt="play">                       
+                            </div>
+                            <div class="item-image">
+                                <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                    alt="poster">
+                            </div>                         
+                            <div class="avgPoint">
+                                <p>5.5</p>
+                                <div class="avgPoint-star">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-title">
+                                <span>P</span>
+                                <h4>Trạng tí phiêu lưu ký</h4>
+                            </div>
+                            <p>100 phút</p>
+                        </div>
+                    </div>
+                    <div class="item__content">
+                        <div class="item-poster">
+                            <div class="item-overlay">  
+                                <img src="./img/play-video.png" alt="play">                       
+                            </div>
+                            <div class="item-image">
+                                <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                    alt="poster">
+                            </div>                         
+                            <div class="avgPoint">
+                                <p>5.5</p>
+                                <div class="avgPoint-star">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-title">
+                                <span>P</span>
+                                <h4>Trạng tí phiêu lưu ký</h4>
+                            </div>
+                            <p>100 phút</p>
+                        </div>
+                    </div>
+                    <div class="item__content">
+                        <div class="item-poster">
+                            <div class="item-overlay">  
+                                <img src="./img/play-video.png" alt="play">                       
+                            </div>
+                            <div class="item-image">
+                                <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                    alt="poster">
+                            </div>                         
+                            <div class="avgPoint">
+                                <p>5.5</p>
+                                <div class="avgPoint-star">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-title">
+                                <span>P</span>
+                                <h4>Trạng tí phiêu lưu ký</h4>
+                            </div>
+                            <p>100 phút</p>
+                        </div>
+                    </div>
+                    <div class="item__content">
+                        <div class="item-poster">
+                            <div class="item-overlay">  
+                                <img src="./img/play-video.png" alt="play">                       
+                            </div>
+                            <div class="item-image">
+                                <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                    alt="poster">
+                            </div>                         
+                            <div class="avgPoint">
+                                <p>5.5</p>
+                                <div class="avgPoint-star">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-title">
+                                <span>P</span>
+                                <h4>Trạng tí phiêu lưu ký</h4>
+                            </div>
+                            <p>100 phút</p>
+                        </div>
+                    </div>
+                    <div class="item__content">
+                        <div class="item-poster">
+                            <div class="item-overlay">  
+                                <img src="./img/play-video.png" alt="play">                       
+                            </div>
+                            <div class="item-image">
+                                <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                    alt="poster">
+                            </div>                         
+                            <div class="avgPoint">
+                                <p>5.5</p>
+                                <div class="avgPoint-star">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-title">
+                                <span>P</span>
+                                <h4>Trạng tí phiêu lưu ký</h4>
+                            </div>
+                            <p>100 phút</p>
+                        </div>
+                    </div>
+                    <div class="item__content">
+                        <div class="item-poster">
+                            <div class="item-overlay">  
+                                <img src="./img/play-video.png" alt="play">                       
+                            </div>
+                            <div class="item-image">
+                                <img src="./img/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                    alt="poster">
+                            </div>                         
+                            <div class="avgPoint">
+                                <p>5.5</p>
+                                <div class="avgPoint-star">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.png">
+                                    <img src="./img/star1.2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-title">
+                                <span>P</span>
+                                <h4>Trạng tí phiêu lưu ký</h4>
+                            </div>
+                            <p>100 phút</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <!-- SLICK CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+    <script>
+        document.getElementById('menu').addEventListener('click', function () {
+            document.getElementById('sideMenu').style.right = '0px';
+            document.getElementById('active').style.backgroundColor = 'rgba(0,0,0,.8)';
+            document.getElementById('active').style.pointerEvents = 'inherit';
+            //document.getElementById('back').style.right = '-600px';
+        })
+        document.getElementById('menu_back').addEventListener('click', function () {
+            document.getElementById('sideMenu').style.right = '-600px'
+            document.getElementById('active').style.backgroundColor = 'transparent';
+        })
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.movies__card').slick({
+                arrows: true,
+            });
+        });
+    </script>
+</body>
+
+</html>
