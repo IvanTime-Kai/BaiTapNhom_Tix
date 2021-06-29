@@ -5,6 +5,15 @@
 }
 
 
-html, body {
+html,
+body {
     font-family: 'Roboto', sans-serif;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    max-width: 940px;
 }

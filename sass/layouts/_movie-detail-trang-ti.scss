@@ -31,7 +31,7 @@
 }
 
 .movie-detail {
-    padding-top: 60px;
+    // padding-top: 60px;
 
 
 
@@ -218,13 +218,12 @@
                             border: 0.06em solid #7ed321;
                             width: 100%;
                             height: 100%;
-                            clip: rect(0, 0.5em, 1em, 0);
+                            clip: rect(0em, 0.5em, 1em, 0);
                             border-radius: 50%;
-                        }
-
-                        .fill {
                             transform: rotate(180deg);
                         }
+
+                        .fill {}
                     }
                 }
 
@@ -276,6 +275,7 @@
                 color: red;
                 background-color: transparent;
                 border: none;
+                font-size: 20px;
             }
 
             .nav-item {}
