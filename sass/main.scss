@@ -1,14 +1,13 @@
 //utils
 @import './utils/variables';
-@import './utils/mixin';    
+@import './utils/mixin';
 //base
 @import './base/reset';
 //components
 @import './components/button';
 //layout
+@import './layouts/movie-detail-trang-ti';
+@import './layouts/new';
+@import './layouts/cinema';
 @import './layouts/carousel';
 @import './layouts/header';
-
-
-
-
