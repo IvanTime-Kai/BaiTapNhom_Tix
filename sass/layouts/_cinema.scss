@@ -1,0 +1,225 @@
+.cinema {
+
+    max-width: 940px;
+
+
+    .cinema-tabs {
+        padding-bottom: 10em;
+        border: 1px solid #ebebec;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+
+        .nav-link {
+            padding: 20px;
+            border: none;
+
+            position: relative;
+
+            &:hover img {
+                opacity: 1;
+            }
+
+            &:focus img {
+                opacity: 1;
+            }
+
+            &::after {
+                content: "";
+
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+
+                width: calc(100% - 40px);
+                border-bottom: 1px solid rgba(238, 238, 238, .88);
+                transform: translateX(-50%);
+            }
+
+            img {
+                opacity: 0.5;
+                width: 50px;
+
+                vertical-align: middle;
+            }
+        }
+
+        .nav-link.active img {
+            opacity: 1;
+        }
+    }
+
+    .cinema-content {
+        border-top: 1px solid #ebebec;
+        border-bottom: 1px solid #ebebec;
+
+        width: 30%;
+        overflow-y: hidden;
+
+        .tab-pane {
+
+            .sub {
+                float: left;
+                padding: 15px;
+                padding-left: 20px;
+
+                width: 100%;
+                cursor: pointer;
+
+                position: relative;
+
+                img {
+                    width: 50px;
+                    float: left;
+
+                    opacity: 0.5;
+                    vertical-align: middle;
+                    transition: all 0.2s;
+                }
+
+                .cinema-info {
+                    padding-left: 60px;
+                    transition: all 0.2s;
+                    opacity: 0.5;
+
+                    .cinema-name {
+                        display: block;
+                        line-height: 1.4;
+                        font-weight: 500;
+
+                        .cinema-color {
+                            color: #8bc541;
+                            font-weight: 500;
+                        }
+
+                        .cinema-color.red {
+                            color: red;
+                        }
+
+                        .cinema-color.blue {
+                            color: #008fe5;
+                        }
+
+                        .cinema-color.gray {
+                            color: #9c9c9c;
+                        }
+
+                        .cinema-color.gold {
+                            color: #e5a813;
+                        }
+
+                        .cinema-color.black {
+                            color: black;
+                        }
+                    }
+
+                    .cinema-address {
+                        display: block;
+                        line-height: 1.4;
+
+                        font-size: 12px;
+
+                        color: #949494;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+
+                    .cinema-detail {
+
+                        a {
+                            display: block;
+                            line-height: 1.4;
+
+                            color: red;
+                        }
+                    }
+                }
+
+
+
+                &::after {
+                    content: "";
+
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+
+                    width: calc(100% - 40px);
+                    border-bottom: 1px solid rgba(238, 238, 238, .88);
+                    transform: translateX(-50%);
+                }
+
+                &:hover {
+                    img {
+                        opacity: 1;
+                    }
+
+                    .cinema-info {
+                        opacity: 1;
+                    }
+                }
+
+                &:focus {
+                    img {
+                        opacity: 1;
+                    }
+
+                    .cinema-info {
+                        opacity: 1;
+                    }
+                }
+
+                &:active {
+                    img {
+                        opacity: 1;
+                    }
+
+                    .cinema-info {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .sub:first-of-type {
+                padding-top: 20px;
+            }
+        }
+
+        .tab-pane.active {
+
+            .sub.active {
+
+                img {
+                    opacity: 1;
+                }
+
+                .cinema-info {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .cinema-session {
+        float: left;
+        width: calc(100% - 30% - 92px);
+
+        border: 1px solid #ebebec;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+
+        position: relative;
+        overflow-y: auto;
+        overflow-x: hidden;
+        text-align: center;
+
+        .cinema-empty {
+            margin-top: 30px;
+
+            p {
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+    }
+}
