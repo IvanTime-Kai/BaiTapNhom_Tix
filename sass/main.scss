@@ -3,11 +3,14 @@
 @import './utils/mixin';    
 //base
 @import './base/reset';
+@import './base/customize';
 //components
 @import './components/button';
 //layout
 @import './layouts/carousel';
 @import './layouts/header';
+@import './layouts/app';
+@import './layouts/footer';
 
 
 
